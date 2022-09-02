@@ -19,6 +19,6 @@ app.get('/', (req, res) => {
   res.sendfile(duongdanfile)
 })
 
-app.listen(port, () => {
+app.listen(process.env.PORT, () => {
   console.log(`Example app listening on port ${port}`);
 });
